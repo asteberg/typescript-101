@@ -33,7 +33,10 @@
  * - x is any other case
  */
 const fooBar = (x: number): "foo" | "bar" | "foobar" | number => {
-    throw new Error("Not implemented")
+    if (x % 3 == 0 && x % 5 == 0) return "foobar"
+    if (x % 3 == 0) return "foo"
+    if (x % 5 == 0) return "bar"
+    return x
 }
 
 for (let number = 1; number <= 20; number++) {

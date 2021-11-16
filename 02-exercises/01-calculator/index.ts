@@ -2,21 +2,13 @@
 // implement the functions "add", "subtract", "multiply" and
 // "divide".
 
-const add = (x: number, y: number): number => {
-    throw new Error("Not implemented")
-}
+const add = (x: number, y: number): number => x + y
 
-const subtract = (x: number, y: number): number => {
-    throw new Error("Not implemented")
-}
+const subtract = (x: number, y: number): number => x - y
 
-const multiply = (x: number, y: number): number => {
-    throw new Error("Not implemented")
-}
+const multiply = (x: number, y: number): number => x * y
 
-const divide = (x: number, y: number): number => {
-    throw new Error("Not implemented")
-}
+const divide = (x: number, y: number): number => x / y
 
 let result = add(4, 3)
 console.log(result) // 7

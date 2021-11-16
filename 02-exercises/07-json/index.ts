@@ -2,13 +2,9 @@
 // "fromJson" to serialize and deserialize JavaScript
 // objects.
 
-const toJson = (item: unknown): string => {
-    throw new Error("Not implemented")
-}
+const toJson = (item: unknown): string => JSON.stringify(item)
 
-const fromJson = (json: string): unknown => {
-    throw new Error("Not implemented")
-}
+const fromJson = (json: string): unknown => JSON.parse(json)
 
 interface Person {
     name: string
